@@ -16,6 +16,12 @@ public class Song {
         this.imageUrl = imageUrl;
     }
 
+    // Fixed Error
+    // Could not deserialize object. Song does not define a no-argument constructor.
+    // If you are using ProGuard, make sure these constructors are not stripped
+    public Song() {
+    }
+
     public String getMediaId() {
         return mediaId;
     }

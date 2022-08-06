@@ -53,4 +53,8 @@ dependencies {
     // Ref: https://github.com/bumptech/glide
     implementation 'com.github.bumptech.glide:glide:4.13.2'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
+
+    // Exo Player Dependency
+    // Ref: https://github.com/google/ExoPlayer
+    implementation 'com.google.android.exoplayer:exoplayer:2.18.1'
 }

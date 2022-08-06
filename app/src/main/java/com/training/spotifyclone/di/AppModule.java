@@ -1,6 +1,7 @@
 package com.training.spotifyclone.di;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestManager;
@@ -25,9 +26,12 @@ import dagger.hilt.components.SingletonComponent;
 @InstallIn(SingletonComponent.class)
 public class AppModule {
 
+    private static final String TAG = "MyAppModule";
+
     @Singleton
     @Provides
     public RequestManager provideGlideInstance(@ApplicationContext Context context) {
+        Log.d(TAG, "@provideGlideInstance()");
         return Glide.with(context).setDefaultRequestOptions(
                 new RequestOptions()
                         .placeholder(R.drawable.ic_image)
